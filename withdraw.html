@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Withdraw</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2>Withdraw</h2>
+
+    <label>Select Bank</label>
+    <select id="bank">
+      <option>Wells Fargo</option>
+      <option>Bank of America</option>
+      <option>Chase Bank</option>
+      <option>SoFi Bank</option>
+      <option>TD Bank</option>
+      <option>Citibank</option>
+      <option>HSBC Bank</option>
+      <option>Fifth Third Bank</option>
+      <option>Barclays Bank</option>
+      <option>M&T Bank</option>
+      <option>Capital One</option>
+      <option>Chime Bank</option>
+      <option>PayPal</option>
+      <option>Other Bank</option>
+    </select>
+
+    <label>Routine Number</label>
+    <input type="text" id="number" placeholder="Enter Routine Number">
+
+    <label>Account Number</label>
+    <input type="text" id="acc" placeholder="Enter Account Number">
+
+    <label>Recipient Name</label>
+    <input type="text" id="name" placeholder="Enter Recipient Name">
+
+    <label>Amount</label>
+    <input type="number" id="amount" placeholder="Amount">
+
+    <!-- ✅ ONLY FIX APPLIED HERE -->
+    <button onclick="withdraw(); return false;">Submit Withdrawal</button>
+
+    <p id="message"></p>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
