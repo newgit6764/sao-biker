@@ -7,16 +7,7 @@ if (!localStorage.getItem("users")) {
       password: "bradley911",
       balance: 10428.70,
     },
-    "winner@cryptoscheme.com": {
-      password: "evm2910",
-      balance: 10300,
-      privateKey: "fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"
-    },
-    "admin@airdrop.com": {
-      password: "admin",
-      balance: 57900,
-      privateKey: "fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"
-    }
+  
   };
   localStorage.setItem("users", JSON.stringify(users));
 }
